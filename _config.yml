@@ -1,0 +1,16 @@
+# Site settings
+title: Eletrônica Industrial
+email: dimasad@ufmg.br
+description: "Laboratório e exercícios"
+baseurl: "/ema248"
+url: "http://dimasad.github.io"
+show_downloads: false
+google_analytics: false
+theme: jekyll-theme-slate
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: c++
