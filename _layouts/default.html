@@ -21,13 +21,12 @@
             enn: "{\\mathscr{n}}",
             reals: "{\\mathbb{R}}"
           },
-          extensions: ["[Contrib]/siunitx/siunitx.js", "color.js"],
+          extensions: ["color.js"],
         },
         SVG: {
           font: "STIX-Web"
         }
       });
-      MathJax.Ajax.config.path["Contrib"] = "/assets/scripts";
     </script>
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_SVG"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">

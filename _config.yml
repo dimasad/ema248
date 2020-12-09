@@ -1,7 +1,7 @@
 # Site settings
 title: Eletrônica Industrial
 email: dimasad@ufmg.br
-description: "Laboratório e exercícios"
+description: "Material auxiliar da disciplina EMA248 da UFMG"
 baseurl: "/ema248"
 url: "http://dimasad.github.io"
 show_downloads: false
