@@ -15,10 +15,10 @@ title: Práticas e Exercícios
 * [Prática 3: Acionamento de um Motor CC][pratica3].
 * [Prática 4: Filtro ativo e amplificador operacional][pratica4].
 
-[pratica1]: pratica1
-[pratica2]: pratica2
-[pratica3]: pratica3
-[pratica4]: pratica4
-[praticas-ere]: praticas-ere
-[ex-diodo]: ex-diodo-solenoide
-[ex-npn]: ex-npn
+[pratica1]: pratica1/
+[pratica2]: pratica2/
+[pratica3]: pratica3/
+[pratica4]: pratica4/
+[praticas-ere]: praticas-ere/
+[ex-diodo]: ex-diodo-solenoide/
+[ex-npn]: ex-npn/
