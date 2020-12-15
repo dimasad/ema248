@@ -24,20 +24,22 @@ conforme orientações na página de
 Primeiros Passos com Arduino
 ----------------------------
 
-Este procedimento mostra os primeiros passos e alguns exemplos simples de
-como carregar um programa no Arduino e usar a comunicação serial para
-monitorar seu funcionamento.
+Nesta seção da prática o Arduino será apresentado, junto com os primeiros 
+passos para sua utilização e alguns exemplos simples de como carregar um
+programa no Arduino virtual e usar a comunicação serial para monitorar seu
+funcionamento.
 
-**O que é um Arduino?**
-Arduino é uma plataforma de hardware e software livre para prototipagem e 
+### Sobre o Arduino
+
+O Arduino é uma plataforma de hardware e software livre para prototipagem e 
 desenvolvimento de projetos eletrônicos.
 É desenvolvida em torno de um microcontrolador [ATmega328P], um processador
-programável com interfaces para conectar com dispositivos, sensores e circuitos
-de diversos tipos.
+programável com interfaces para conectar a dispositivos, sensores e circuitos
+dos mais diversos tipos.
 O _firmware_ do microcontrolador é atualizado através da porta USB,
 que também pode ser usada para alimentar o circuito.
 O Arduino Uno, modelo utilizado nas práticas, pode ser visto na 
-Figura abaixo.
+figura abaixo.
 
 {%
    include figure.html
@@ -47,30 +49,71 @@ Figura abaixo.
             Commons Attribution Share-Alike."
 %}
 
-**Como se programa o Arduino?**
 O Arduino é programado na linguagem C++, podendo também ser programado em C
 ou diretamente em linguagem de máquina.
-O aplicativo Arduino IDE é um ambiente de desenvolvimento integrado que pode ser
-utilizado para escrever o código, carregar os programas e monitorar sua 
-execução.
-No computador do laboratório haverá um atalho para execução da IDE na
-área de trabalho ou no menu iniciar.
+Para maiores informações sobre a linguagem e interface de programação do
+Arduino, consulte a  [Documentação de Referência da Linguagem][arduino-ref].
+Existe uma infinidade de bibliografia complementar disponível na internet
+sobre o Arduino. Um livro que eu gosto bastante é o [Arduino Cookbook],
+mas para os objetivos desta disciplina basta a funcionalidade mais básica da
+plataforma. Iremos utilizar o Arduino somente para explorar e aplicar os
+conceitos estudados na teoria.
 
-A tela de início da IDE está mostrada na figura abaixo.
-Ela possui o esqueleto de um programa vazio.
-O código que estiver no corpo da função `setup` será executado
-uma vez, quando a placa for energizada, para configurar a placa e inicializar
-o programa.
-O código que estiver no corpo da função `loop` será executado 
-repetidamente até a placa ser desenergizada; esse código contém a lógica de
-execução da placa.
-Todo o texto que estiver depois dos caracteres `//` são comentários do código.
+### Utilizando o Arduino no Tinkercad
+
+Para utilizar o Arduino no Tinkercad, basta incluir o dispositivo 
+"Arduino Uno R3" na montagem. Uma vez feito isso, é possível programá-lo
+através da aba código, no canto superior direto da página. 
+No Tinkercad, existe a possibilidade de programação utilizando uma
+liguagem gráfica de blocos, mas não iremos usar essa funcionalidade na 
+disciplina pois não corresponde ao que utilizamos no laboratório nem no
+ambiente profissional. Por isso, selecione a modalidade "Texto" ao invés
+de "Blocos" na caixa de seleção abaixo da aba de código. Todos esses
+elementos são mostrados na figura abaixo.
 
 {%
    include figure.html
-   file="arduino_ide_windows_comentado.svg"
-   caption="IDE do Arduino e alguns de seus elementos importantes."
+   file="tinkercad_prog.svg"
+   img_style="width: 100%"
+   caption="Elementos principais da interface de programação do Arduino no
+   Tinkercad."
 %}
+
+O programa default do Arduino no Tinkercad é o exemplo _[Blink]_, que faz
+o LED da placa piscar na frequência de 0,5&nbsp;Hz.
+O programa, reproduzido abaixo,
+mostra o esqueleto de um programa de Arduino básico.  O código que estiver no
+corpo da função `setup` será executado uma vez, quando a placa for energizada, 
+geralmente para configurar a placa e inicializar as variáveis do programa.
+Já o código que estiver no corpo da função `loop` será executado repetidamente 
+até a placa ser desligada; esse código contém a lógica de execução do programa.
+Todo o texto que estiver depois dos caracteres `//` são comentários.
+
+```
+void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+```
+
+A função [pinMode] serve para configurar o modo de operação dos pinos do
+Arduino. A chamada `pinMode(13, OUTPUT)` configura o pino 13, que está 
+conectado internamente ao LED da placa, para que opere no modo de saída digital.
+A função [digitalWrite], por sua vez, define o nível de tensão da saída como
+alto (`HIGH`, correspondente a 5&nbsp;V) ou baixo 
+(`LOW`, correspondente a 0&nbsp;V).
+Por fim, a função [delay] pausa a execução do programa por um certo número de
+milissegundos. Tudo isso junto faz com que o LED da placa pisque, permanecendo
+1&nbsp;s ligado e em seguida 1&nbsp;s desligado.
+Teste esse programa clicando em "Iniciar simulação" e observe seu funcionamento.
 
 **Exemplo de comunicação com o Arduino.**
 Abaixo temos um código simples que mostra o uso da porta serial
@@ -358,12 +401,17 @@ pino de entrada digital número 9 do Arduino é 5 V.
 > A leitura do botão e o acionamento do LED serão conectados pela lógica do
 > programa.
 
+[arduino-ref]: https://www.arduino.cc/reference/pt/
+[Arduino Cookbook]: https://www.oreilly.com/library/view/arduino-cookbook/9781449399368/
+[ATmega328P]: http://www.microchip.com/wwwproducts/en/ATmega328p
+[Blink]: https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
+[commons.wikimedia.org]: http://commons.wikimedia.org
+[delay]: https://www.arduino.cc/reference/pt/language/functions/time/delay/
+[digitalWrite]: https://www.arduino.cc/reference/pt/language/functions/digital-io/digitalwrite/
+[pinMode]: https://www.arduino.cc/reference/pt/language/functions/digital-io/pinmode/
 [praticas-ere]: /ema248/praticas-ere/
 [Tinkercad]: http://tinkercad.com/
-[arduino.cc/en/Reference/]: http://arduino.cc/en/Reference/
-[arduino_uno]: /assets/images/arduino_uno.png
-[ATmega328P]: http://www.microchip.com/wwwproducts/en/ATmega328p
-[commons.wikimedia.org]: http://commons.wikimedia.org
+
 [delayMicroseconds]: https://www.arduino.cc/en/Reference/DelayMicroseconds
 [digikey.com]: http://www.digikey.com
 [if]: http://arduino.cc/reference/en/language/structure/control-structure/if
