@@ -75,9 +75,10 @@ nome é possível alterá-lo, para que eu saiba a qual atividade ele se refere.
             possível alterar para o nome da prática e atividade."
 %}
 
-Por fim, uma vez para programar o Arduino virtual, basta clicar no botão de
+Para programar o Arduino virtual, basta clicar no botão de
 _Código_, ao lado do _Iniciar simulação_. Observe que é necessário incluir
-um Arduino virtual na montagem antes. O modo default de programação do
+um Arduino virtual ou outro dispositivo programável na montagem antes. 
+O modo default de programação do
 Tinkercad é uma linguagem simplificada de blocos, para esta disciplina,
 utilize o modo texto, que pode ser selecionado na barra superior, como
 mostrado na figura abaixo.
@@ -87,11 +88,5 @@ mostrado na figura abaixo.
    file="tinkercad_codigo_texto.png"
    caption="Seleção da programação tradicional em C++ no Tinkercad."
 %}
-
-No ambiente de simulação não é necessário utilizar um protoboard para fazer as
-montagens, mas eu gostaria que eles fossem utilizados para que vocês aprendam a
-transformar especificações de diagramas de circuito em uma possível montagem
-física. No Tinkercad é usado o nome em inglês, _breadboard_, protoboard é 
-o nome em português, por incrível que pareça.
 
 [Tinkercad]: https://www.tinkercad.com/
