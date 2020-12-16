@@ -218,7 +218,9 @@ Além da conexão elétrica, os protoboards também tem a função de fixar
 fisicamente os componentes.
 As trilhas verticais nas bordas da placa, marcadas com linhas contínuas 
 vermelhas e azuis, são geralmente utilizadas para os terminais da fonte de
-alimentação.
+alimentação. Para mais informações e fotos de protoboards por dentro,
+veja [este guia](https://portal.vidadesilicio.com.br/protoboard/) bem
+explicativo.
 
 {%
    include figure.html
