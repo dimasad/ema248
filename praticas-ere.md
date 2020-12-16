@@ -75,18 +75,4 @@ nome é possível alterá-lo, para que eu saiba a qual atividade ele se refere.
             possível alterar para o nome da prática e atividade."
 %}
 
-Para programar o Arduino virtual, basta clicar no botão de
-_Código_, ao lado do _Iniciar simulação_. Observe que é necessário incluir
-um Arduino virtual ou outro dispositivo programável na montagem antes. 
-O modo default de programação do
-Tinkercad é uma linguagem simplificada de blocos, para esta disciplina,
-utilize o modo texto, que pode ser selecionado na barra superior, como
-mostrado na figura abaixo.
-
-{%
-   include figure.html
-   file="tinkercad_codigo_texto.png"
-   caption="Seleção da programação tradicional em C++ no Tinkercad."
-%}
-
 [Tinkercad]: https://www.tinkercad.com/

@@ -115,62 +115,60 @@ milissegundos. Tudo isso junto faz com que o LED da placa pisque, permanecendo
 1&nbsp;s ligado e em seguida 1&nbsp;s desligado.
 Teste esse programa clicando em "Iniciar simulação" e observe seu funcionamento.
 
-**Exemplo de comunicação com o Arduino.**
-Abaixo temos um código simples que mostra o uso da porta serial
-do Arduino, uma interface básica de comunicação com o computador ou outros
-dispositivos.
-Antes de utilizá-la, é necessário chamar a função `Serial.begin`
-para inicializá-la e definir a taxa de transmissão de dados (_baud rate_).
-Essa inicialização geralmente é feita na função `setup`.
-Uma vez inicializada, a função `Serial.println` pode ser chamada
-para imprimir um texto ou variável seguido por uma quebra de linha.
+### Comunicação serial
+
+A porta USB do Arduino pode ser utilizada também para transferência de dados
+entre a placa e o computador, além de servir para carregar o programa. Ela está
+conectada à porta serial do microcontrolador, uma interface básica de 
+comunicação entre dispositivos digitais. Entre outras coisas, a porta serial
+permite a impressão de texto do programa do Arduino, para monitoração e
+_debug_ dos programas.
+
+No código fonte, a porta serial é acessada através do objeto [Serial], que é
+parte da biblioteca padrão do Arduino. O programa abaixo mostra um exemplo 
+simples de comunicação serial. Antes de utilizar a porta, é necessário chamar
+a função [Serial.begin] para inicializá-la e definir a taxa de transmissão de
+dados (_baud rate_). Essa inicialização geralmente é feita na função `setup`.
+Uma vez inicializada, a função [Serial.println] pode ser chamada para imprimir
+um texto ou variável seguido por uma quebra de linha.
 
 ```
 void setup() {
   Serial.begin(230400); // Inicializa a porta Serial
-  Serial.println("Hello World"); // Imprime um texto
+  Serial.println("Hello World!!!"); // Imprime um texto
 }
 
 void loop() {
-  // Não faz nada no resto do programa
+  delay(1000); // Aguarda 1 segundo
+  Serial.println("Oi de novo."); // Imprime outro texto novamente
 }
 ```
 
-**Carregando o código no Arduino.**
-Para carregar o programa, conecte o Arduino no computador com o cabo USB
-e selecione a porta em que o dispositivo está conectado no menu
-_Tools $$\to$$ Serial Port $$\to$$ COMx (Arduino Uno)_.
-Geralmente o Arduino aparece como porta COM5, mas às vezes pode ser reconhecido
-com outro número.
-Digite então o código listado acima na IDE e carregue no Arduino com
-opção do menu _File $$\to$$ Upload_ ou com o atalho `Ctrl+U`.
-
-**Monitorando a porta serial.**
-Os dados enviados pelo Arduino com a função `Serial.println` podem ser vistos
-com o monitor serial, disponível no menu _Tools $$\to$$ Serial Monitor_.
-O _baud rate_ da porta deve ser escolhido com o mesmo valor utilizado
-na função `Serial.begin`, como mostrado na figura abaixo,
-ou os caracteres não serão interpretados
-corretamente.
-Quando o monitor serial é aberto, o microcontrolador é reiniciado e a função 
-`setup` invocada.
-Se tudo ocorreu corretamente, o texto "Hello World" deverá ser recebido.
+Copie esse programa para o Tinkercad e inicie a simulação.
+O resultado pode ser visto no Monitor serial, e consiste em uma mensagem
+"Hello World!!!" seguida de "Oi de novo." impresso repetidamente. Um
+exemplo do resultado da simulação pode ser visto na figura abaixo.
 
 {%
    include figure.html
-   file="serial_monitor_comentado.svg"
-   caption="Monitor serial do Arduino."
+   file="tinkercad_hello.png"
+   caption="Resultado esperado da simulação do programa _Hello World_."
 %}
 
-**Executando um programa um pouco mais complexo.**
-Carregue o código abaixo no Arduino.
+
+As funções [Serial.print] e [Serial.println] também podem ser utilizadas para
+imprimir variáveis do programa. Abaixo temos um exemplo que mostra o valor de
+uma [variável global][scope] do tipo `int` (número inteiro), declarada no 
+início do programa. Após a função `setup` inicializar a porta serial, na
+função loop o valor da variável é impresso, incrementado, e a execução do
+pausada por 250&nbsp;ms até terminar e ser executada novamente.
+Simule esse programa e observe sua saída com o Monitor serial.
 
 ```
 int i = 0; // Define uma variável global
 
 void setup() {
-  Serial.begin(230400); // Inicializa a porta Serial
-  Serial.println("Hello world"); // Imprime um texto
+  Serial.begin(115200); // Inicializa a porta Serial
 }
 
 void loop() {
@@ -178,27 +176,26 @@ void loop() {
   Serial.println(i); // Imprime o valor da variável
   i = i + 1; // Incrementa a variável
 
-  delay(250); // Pausa a execucao por 250ms
+  delay(250); // Pausa a execução por 250ms
 }
 ```
 
-No início do código, uma variável global do tipo `int` (número inteiro) é
-declarada.
-Na função `setup`, a porta serial é inicializada e 
-o texto "Hello World" é enviado.
-Em seguida, na função `loop`, o valor da variável é impresso,
-incrementado, e a execução do programa pausada por 250 ms até 
-a função ser re-executada novamente.
-Carregue o código e observe sua saída com o monitor serial.
 
 > ### Atividade
 >
-> Faça a variável `i` alterar incrementar seu valor de 0 a 10 e depois
-> decrementar de 10 a 0 novamente, periodicamente.
-> Consulte a documentação da linguagem
-> e API do Arduino em [arduino.cc/en/Reference/]. Em especial, veja a sintaxe
-> das estrutras de controle de fluxo como [if] e dos operadores de comparação
-> como [>] e [<].
+> Crie um programa para o Arduino que imprime na porta serial um número de 0 a
+> 5 e depois de 4 a 1 novamente, repetindo as sequências indefinidamente.
+> Coloque no relatório o código fonte do programa e salve no Tinkercad como
+> "Prática 1---Serial". 
+>
+> **Dica:** existem duas principais maneiras de se fazer esse programa:
+> 
+> - utilizando dois laços [for] na função `loop`; ou
+> - utilizando uma variável global para definir o valor do incremento do 
+> contador, e alterando esse valor ao chegar nos extremos.
+>
+> Consulte a [API do Arduino][arduino-ref]. Para maiores informações a respeito
+> da linguagem.
 
 Acionamento de um LED
 ---------------------
@@ -408,8 +405,14 @@ pino de entrada digital número 9 do Arduino é 5 V.
 [commons.wikimedia.org]: http://commons.wikimedia.org
 [delay]: https://www.arduino.cc/reference/pt/language/functions/time/delay/
 [digitalWrite]: https://www.arduino.cc/reference/pt/language/functions/digital-io/digitalwrite/
+[for]: https://www.arduino.cc/reference/pt/language/structure/control-structure/for/
 [pinMode]: https://www.arduino.cc/reference/pt/language/functions/digital-io/pinmode/
 [praticas-ere]: /ema248/praticas-ere/
+[scope]: https://www.arduino.cc/reference/pt/language/variables/variable-scope-qualifiers/scope/
+[Serial]: https://www.arduino.cc/reference/pt/language/functions/communication/serial/
+[Serial.begin]: https://www.arduino.cc/reference/pt/language/functions/communication/serial/begin/
+[Serial.print]: https://www.arduino.cc/reference/pt/language/functions/communication/serial/print/
+[Serial.println]: https://www.arduino.cc/reference/pt/language/functions/communication/serial/println/
 [Tinkercad]: http://tinkercad.com/
 
 [delayMicroseconds]: https://www.arduino.cc/en/Reference/DelayMicroseconds
