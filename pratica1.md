@@ -25,8 +25,8 @@ Primeiros Passos com Arduino
 ----------------------------
 
 Nesta seção da prática o Arduino será apresentado, junto com os primeiros 
-passos para sua utilização e alguns exemplos simples de como carregar um
-programa no Arduino virtual e usar a comunicação serial para monitorar seu
+passos para sua utilização. Serão mostrados alguns exemplos simples de
+como simular um programa e usar a comunicação serial para monitorar seu
 funcionamento.
 
 ### Sobre o Arduino
@@ -53,11 +53,11 @@ O Arduino é programado na linguagem C++, podendo também ser programado em C
 ou diretamente em linguagem de máquina.
 Para maiores informações sobre a linguagem e interface de programação do
 Arduino, consulte a  [Documentação de Referência da Linguagem][arduino-ref].
-Existe uma infinidade de bibliografia complementar disponível na internet
+Existe uma grande bibliografia complementar e literatura disponível na internet
 sobre o Arduino. Um livro que eu gosto bastante é o [Arduino Cookbook],
 mas para os objetivos desta disciplina basta a funcionalidade mais básica da
 plataforma. Iremos utilizar o Arduino somente para explorar e aplicar os
-conceitos estudados na teoria.
+conceitos estudados na teoria de eletrônica.
 
 ### Utilizando o Arduino no Tinkercad
 
@@ -81,13 +81,13 @@ elementos são mostrados na figura abaixo.
 
 O programa default do Arduino no Tinkercad é o exemplo _[Blink]_, que faz
 o LED da placa piscar na frequência de 0,5&nbsp;Hz.
-O programa, reproduzido abaixo,
-mostra o esqueleto de um programa de Arduino básico.  O código que estiver no
+O programa, reproduzido abaixo, mostra o esqueleto de um programa de Arduino.
+O código que estiver no
 corpo da função `setup` será executado uma vez, quando a placa for energizada, 
 geralmente para configurar a placa e inicializar as variáveis do programa.
 Já o código que estiver no corpo da função `loop` será executado repetidamente 
 até a placa ser desligada; esse código contém a lógica de execução do programa.
-Todo o texto que estiver depois dos caracteres `//` são comentários.
+Todo o texto que estiver depois dos caracteres `//` é um comentário.
 
 ```
 void setup()
@@ -104,8 +104,9 @@ void loop()
 }
 ```
 
-A função [pinMode] serve para configurar o modo de operação dos pinos do
-Arduino. A chamada `pinMode(13, OUTPUT)` configura o pino 13, que está 
+No programa acima, a função [pinMode] serve para configurar o modo de operação
+dos pinos do Arduino. 
+A chamada `pinMode(13, OUTPUT)` configura o pino 13, que está 
 conectado internamente ao LED da placa, para que opere no modo de saída digital.
 A função [digitalWrite], por sua vez, define o nível de tensão da saída como
 alto (`HIGH`, correspondente a 5&nbsp;V) ou baixo 
@@ -215,7 +216,7 @@ como mostrado na figura abaixo.
 Dessa forma, os terminais sobre a mesma faixa de condutores estão todos 
 conectados eletricamente, sem a necessidade de solda.
 Além da conexão elétrica, os protoboards também tem a função de fixar 
-fisicamente os componentes.
+mecanicamente os componentes.
 As trilhas verticais nas bordas da placa, marcadas com linhas contínuas 
 vermelhas e azuis, são geralmente utilizadas para os terminais da fonte de
 alimentação. Para mais informações e fotos de protoboards por dentro,
@@ -267,8 +268,10 @@ e o catodo do LED é identificado incorretamente como "catódica".
 **Resistores.**
 Para acionar um LED também é essencial o uso de um resistor.
 No laboratório, é comum os alunos esquecerem do resistor ao ligar o LED,
-isso faz com que o LED emita um brilho muito forte e bonito, que será também
-seu último brilho pois ele queima por sobrecorrente.
+o que faz com que ele emita um brilho muito forte e bonito.
+Acontece que esse também será também será o último brilho do LED, pois ocorre 
+devido à queima do componente por sobrecorrente.
+
 O valor da resistência de resistores de furo passante é indicado com o código
 de cores mostrado na figura abaixo, no qual cada cor equivale a um dígito.
 As duas primeiras faixas indicam os algarismos significativos da resistência,
@@ -308,10 +311,12 @@ Monte o circuito no Tinkercad, simule, e verifique se o LED acende.
 > tensão no LED, o parâmetro $$V_K$$ do modelo, igual a 2&nbsp;V.
 > Simule o circuito com esses valores de resistência e meça a corrente
 > através do LED com um multímetro. Mostre no relatório o valor de resistência
-> escolhido e a corrente medida.
+> escolhido e a corrente medida. Salve a montagens com um dos resistores no
+> Tinkercad como "Prática 1---LED".
 >
 > **Obs.:** o modo de medição de corrente do multímetro do Tinkercad também
-> foi incorretamente traduzido como "Amperagem".
+> foi incorretamente traduzido como "Amperagem". Lembre também que o amperímetro
+> deve ficar em série com o circuito.
 
 ### Acionamento com uma saída digital
 
