@@ -206,9 +206,9 @@ Em um primeiro momento, o LED será ligado diretamente na fonte e,
 posteriormente, será acionado programaticamente por uma saída digital do
 Arduino.
 
-### Montagens com protoboard
+### Componentes utilizados
 
-Protoboards, também denominados matrizes de contato, são placas para a
+**Protoboards**, também denominados matrizes de contato, são placas para a
 construção de protótipos de circuitos eletrônicos.
 São compostos de uma placa com orifícios sobre faixas de condutores metálicos,
 como mostrado na figura abaixo.
@@ -229,21 +229,17 @@ alimentação.
 %}
 
 No Tinkercad, não é necessário utilizar protoboards para realizar a simulação,
-mas eu gostaria 
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+mas eu gostaria que eles fossem utilizados para exercitar a montagem como é
+feita no laboratório. O protoboard aparece como "placa de ensaio" na biblioteca
+do Tinkercad. Ao se passar o mouse sobre um de seus pinos, os demais pontos da
+mesma linha ou coluna, conectados internamente, são indicados em verde.
 
 **LEDs.**
 Os diodos emissores de luz (_light-emitting diode_, LED) são dispositivos
 semicondutores que convertem energia elétrica em energia luminosa com alta
 eficiência.
-Os LEDs possuem polaridade, caso seja conectado ao circuito com seus
-terminais invertidos ele não acenderá.
+Por serem diodos, os LEDs possuem polaridade, caso seja conectado ao circuito
+com seus terminais invertidos ele não acenderá.
 Os terminais do LED podem ser identificados como mostrado na figura abaixo.
 O pino do catodo é mais curto e marcado por um chanfro no encapsulamento
 do componente, que pode ser identificado na vista superior do dispositivo.
@@ -259,14 +255,24 @@ multímetro.
             Fonte: [commons.wikimedia.org], imagem liberada em domínio público."
 %}
 
+No Tinkercad, o chanfro do LED é desenhado para identificação dos seus 
+terminais. Apesar disso, a maneira mais fácil de identificar os terminais é
+passando o mouse por cima deles, o que faz com que seu nome seja mostrado.
+Nesse ponto, vale mencionar que o Tinkercad tem alguns erros de tradução,
+e o catodo do LED é identificado incorretamente como "catódica".
 
-**Identificando resistores.**
-Para acionar um LED também é necessário o uso de um resistor.
+
+**Resistores.**
+Para acionar um LED também é essencial o uso de um resistor.
+No laboratório, é comum os alunos esquecerem do resistor ao ligar o LED,
+isso faz com que o LED emita um brilho muito forte e bonito, que será também
+seu último brilho pois ele queima por sobrecorrente.
 O valor da resistência de resistores de furo passante é indicado com o código
 de cores mostrado na figura abaixo, no qual cada cor equivale a um dígito.
 As duas primeiras faixas indicam os algarismos significativos da resistência,
 a terceira faixa indica a um multiplicador e a quarta indica a faixa de
-tolerância do valor.
+tolerância do valor. Observe que, ao alterar o valor da resistência no
+Tinkercad, o código de cores do resistor é atualizado.
 
 {%
    include figure.html
@@ -277,26 +283,33 @@ tolerância do valor.
 
 ### Diretamente na fonte
 
-O diagrama do circuito e uma possível maneira de montá-lo no protoboard
-estão representados na figura abaixo.
-O Arduino será utilizado como fonte de tensão.
-Para iniciar, separe os seguintes materiais:
-
-* um resistor de 180 Ω,
-* um LED,
-* um protoboard,
-* um Arduino,
-* fios para montagem.
+A primeira montagem de teste do circuito consiste em acionar o LED diretamente
+da fonte de 5&nbsp;V do Arduino. O diagrama do circuito e uma possível maneira
+de montá-lo no protoboard estão representados na figura abaixo. 
+Monte o circuito no Tinkercad, simule, e verifique se o LED acende.
 
 {%
    include figure.html
-   file="led_direto_fonte.png"
+   file="led-fonte-pratica1.svg"
    caption="Diagrama esquemático do circuito para acionamento do LED direto
             com a fonte e um exemplo de como montá-lo no protoboard."
 %}
 
-Monte o circuito  e conecte o Arduino na porta USB do computador.
-O LED deverá acender.
+> ### Atividade para entrega
+>
+> A escolha do resistor utilizado no acionamento do LED é baseda na corrente
+> que se deseja fornecê-lo que, por sua vez, é proporcional à luminosidade 
+> emitida por ele.
+> Utilizando o modelo simplificado do LED, apresentado na seção 1.9 do livro
+> do Boylestad e Nashelsky, escolha o valor de resistores para que a corrente
+> do LED seja de 5&nbsp;mA, 10&nbsp;mA e 20&nbsp;mA. Considere a queda de 
+> tensão no LED, o parâmetro $$V_K$$ do modelo, igual a 2&nbsp;V.
+> Simule o circuito com esses valores de resistência e meça a corrente
+> através do LED com um multímetro. Mostre no relatório o valor de resistência
+> escolhido e a corrente medida.
+>
+> **Obs.:** o modo de medição de corrente do multímetro do Tinkercad também
+> foi incorretamente traduzido como "Amperagem".
 
 ### Com uma Saída Digital
 
@@ -418,8 +431,10 @@ pino de entrada digital número 9 do Arduino é 5 V.
 [Blink]: https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
 [commons.wikimedia.org]: http://commons.wikimedia.org
 [delay]: https://www.arduino.cc/reference/pt/language/functions/time/delay/
+[digikey.com]: http://www.digikey.com
 [digitalWrite]: https://www.arduino.cc/reference/pt/language/functions/digital-io/digitalwrite/
 [for]: https://www.arduino.cc/reference/pt/language/structure/control-structure/for/
+[learn.sparkfun.com]: http://learn.sparkfun.com/
 [pinMode]: https://www.arduino.cc/reference/pt/language/functions/digital-io/pinmode/
 [praticas-ere]: /ema248/praticas-ere/
 [scope]: https://www.arduino.cc/reference/pt/language/variables/variable-scope-qualifiers/scope/
@@ -429,9 +444,6 @@ pino de entrada digital número 9 do Arduino é 5 V.
 [Serial.println]: https://www.arduino.cc/reference/pt/language/functions/communication/serial/println/
 [Tinkercad]: http://tinkercad.com/
 
-[delayMicroseconds]: https://www.arduino.cc/en/Reference/DelayMicroseconds
-[digikey.com]: http://www.digikey.com
 [if]: http://arduino.cc/reference/en/language/structure/control-structure/if
-[learn.sparkfun.com]: http://learn.sparkfun.com/
 [>]: http://arduino.cc/reference/en/language/structure/comparison-operators/greaterthan
 [<]: http://arduino.cc/reference/en/language/structure/comparison-operators/lessthan
