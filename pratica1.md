@@ -313,7 +313,7 @@ Monte o circuito no Tinkercad, simule, e verifique se o LED acende.
 > **Obs.:** o modo de medição de corrente do multímetro do Tinkercad também
 > foi incorretamente traduzido como "Amperagem".
 
-### Acionamento com uma Saída Digital
+### Acionamento com uma saída digital
 
 O comportamento dos pinos do Arduino pode ser definido e controlado por
 software.
