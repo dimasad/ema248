@@ -281,10 +281,10 @@ Tinkercad, o código de cores do resistor é atualizado.
             Fonte: [digikey.com]."
 %}
 
-### Diretamente na fonte
+### Acionamento básico
 
 A primeira montagem de teste do circuito consiste em acionar o LED diretamente
-da fonte de 5&nbsp;V do Arduino. O diagrama do circuito e uma possível maneira
+na fonte de 5&nbsp;V do Arduino. O diagrama do circuito e uma possível maneira
 de montá-lo no protoboard estão representados na figura abaixo. 
 Monte o circuito no Tinkercad, simule, e verifique se o LED acende.
 
@@ -311,7 +311,7 @@ Monte o circuito no Tinkercad, simule, e verifique se o LED acende.
 > **Obs.:** o modo de medição de corrente do multímetro do Tinkercad também
 > foi incorretamente traduzido como "Amperagem".
 
-### Com uma Saída Digital
+### Acionamento com uma Saída Digital
 
 O comportamento dos pinos do Arduino pode ser definido e controlado por
 software.
@@ -319,13 +319,14 @@ Quando um pino é configurado como saída digital, ele se torna uma fonte de
 tensão que pode assumir dois valores: nívelo lógico baixo (0 V) ou 
 alto (5 V).
 Neste procedimento, vamos utilizar uma saída digital do Arduino para acionar
-o LED.
+o LED. Esse exemplo é basicamente o pisca pisca do exemplo [Blink] com um
+LED externo à placa.
 
 **Funções para uso das saídas digitais.**
-Para configurar o pino como saída, a função `pinMode` deve ser utilizada.
+Para configurar o pino como saída, a função [pinMode] deve ser utilizada.
 Geralmente essa configuração é feita na função `setup`, que é executada
 toda vez que o dispositivo é ligado.
-O nível de tensão do pino é então definido com a função `digitalWrite`.
+O nível de tensão do pino é então definido com a função [digitalWrite].
 Abaixo temos um código que exemplifica o uso das saídas digitais.
 
 **Montagem.**
@@ -344,16 +345,16 @@ void setup() {
 
 void loop() {
   digitalWrite(10, HIGH); // Define a tensão do pino 10 em 5V
-  delay(100);  // Aguarda 100ms
+  delay(1000);  // Aguarda 1s
 
   digitalWrite(10, LOW); // Define a tensão do pino 10 em 0V
-  delay(900); // Aguarda 900ms
+  delay(1000); // Aguarda 1s
 }
 ```
 
 {%
    include figure.html
-   file="led_porta_digital.png"
+   file="led-porta-digital-pratica1.svg"
    caption="Montagem para acionamento do LED com uma saída digital do Arduino."
 %}
 
