@@ -334,9 +334,16 @@ Para testar esse código, monte o circuito representado na
 figura abaixo, que é acionado pela saída digital do Arduino.
 Quando a saída estiver em nível lógico alto, o LED irá acender.
 Quando estiver em nível lógico baixo, o LED irá apagar.
-Carregue o código no Arduino e observe seu funcionamento.
-Altere os tempos que o LED permanece ligado e desligado e veja como o circuito
-responde.
+
+{%
+   include figure.html
+   file="led-porta-digital-pratica1.svg"
+   caption="Montagem para acionamento do LED com uma saída digital do Arduino."
+%}
+
+Para comandar o Arduino, utilize o código abaixo. Ele faz o LED piscar ao
+ligar e desligar a saída digital de número 10. Simule o circuito e veja
+seu funcionamento.
 
 ```
 void setup() {
@@ -351,80 +358,6 @@ void loop() {
   delay(1000); // Aguarda 1s
 }
 ```
-
-{%
-   include figure.html
-   file="led-porta-digital-pratica1.svg"
-   caption="Montagem para acionamento do LED com uma saída digital do Arduino."
-%}
-
-> #### Atividade
->
-> Quando o LED pisca muito rapidamente vemos somente a luminosidade média que
-> ele emite. Usando a função [delayMicroseconds], altere o programa para que
-> o LED fique aceso por 100 μs e apagado por 900 μs (intensidade 10%). 
-> Em seguida, faça um
-> programa para que a luminosidade média do LED varie continuamente de 0 a
-> 100% no intervalo de 1 s.
-
-Entradas digitais
------------------
-
-Os pinos do Arduino também podem ser configurados como entradas digitais,
-que são medidores de tensão de dois estados.
-Para realizar essa configuração a função `pinMode` é chamada com
-o argumento `INPUT`, após o que a função `digitalRead` pode
-ser utilizada para ler seu estado.
-Se a tensão no pino for superior a 3 V a função `digitalRead` retorna 1,
-caso contrário retorna 0.
-
-Abaixo temos um código que exemplifica o uso das entradas digitais.
-O pino 9 é configurado como entrada, seu estado é lido em cada invocação
-da função `loop` e em seguida é impresso na porta serial.
-
-```
-void setup() {
-  // Define o pino digital 9 como entrada
-  pinMode(9, INPUT);
-
-  Serial.begin(230400); // Inicializa a porta Serial
-}
-
-void loop() {
-  // Testa se o botao pressionado
-  if (digitalRead(9) == 1) {
-    Serial.println("Pressionado");
-  } else {
-    Serial.println("Liberado");
-  }
-
-  // Aguarda 250ms
-  delay(250);
-}
-```
-
-As entradas digitais podem ser utilizadas para ler o estado de um botão, 
-por exemplo.
-Na figura abaixo temos o diagrama esquemático de um circuito
-para leitura do estado de um botão.
-Quando o botão aberto, não circula corrente no circuito e a tensão no resistor
-é zero.
-Quando o botão é pressionado, circula corrente e a tensão no resistor e no
-pino de entrada digital número 9 do Arduino é 5 V.
-
-{%
-   include figure.html
-   file="montagem_botao_schem.png"
-   caption="Montagem para teste das entradas digitais."
-%}
-
-> ### Atividade
->
-> Monte o LED e o botão fazendo as montagens da Figura 8 e 9 no mesmo
-> protoboard. Configure o Arduino para que, quando o botão
-> estiver pressionado o LED pisque com a frequência de 2 Hz.
-> A leitura do botão e o acionamento do LED serão conectados pela lógica do
-> programa.
 
 [arduino-ref]: https://www.arduino.cc/reference/pt/
 [Arduino Cookbook]: https://www.oreilly.com/library/view/arduino-cookbook/9781449399368/
