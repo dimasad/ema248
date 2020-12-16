@@ -181,7 +181,7 @@ void loop() {
 ```
 
 
-> ### Atividade
+> ### Atividade para entrega
 >
 > Crie um programa para o Arduino que imprime na porta serial um número de 0 a
 > 5 e depois de 4 a 1 novamente, repetindo as sequências indefinidamente.
@@ -200,18 +200,22 @@ void loop() {
 Acionamento de um LED
 ---------------------
 
-Neste procedimento, será mostrado como fazer uma montagem no protoboard
-para acionamento de um LED.
-Em um primeiro momento, o LED será ligado diretamente á fonte e, posteriormente,
-será acionado programaticamente com uma saída digital do Arduino.
+Nesta parte da prática, será mostrado como fazer uma montagem no protoboard
+para acionamento de um LED. 
+Em um primeiro momento, o LED será ligado diretamente na fonte e, 
+posteriormente, será acionado programaticamente por uma saída digital do
+Arduino.
 
-**O que é um protoboard?**
+### Montagens com protoboard
+
 Protoboards, também denominados matrizes de contato, são placas para a
 construção de protótipos de circuitos eletrônicos.
 São compostos de uma placa com orifícios sobre faixas de condutores metálicos,
 como mostrado na figura abaixo.
 Dessa forma, os terminais sobre a mesma faixa de condutores estão todos 
 conectados eletricamente, sem a necessidade de solda.
+Além da conexão elétrica, os protoboards também tem a função de fixar 
+fisicamente os componentes.
 As trilhas verticais nas bordas da placa, marcadas com linhas contínuas 
 vermelhas e azuis, são geralmente utilizadas para os terminais da fonte de
 alimentação.
@@ -223,6 +227,16 @@ alimentação.
             Fonte: [learn.sparkfun.com], licença Creative
             Commons Attribution Share-Alike."
 %}
+
+No Tinkercad, não é necessário utilizar protoboards para realizar a simulação,
+mas eu gostaria 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 **LEDs.**
 Os diodos emissores de luz (_light-emitting diode_, LED) são dispositivos
