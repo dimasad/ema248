@@ -159,7 +159,7 @@
   \pgf@xc=\pgf@x%  
   \pgf@yc=\pgf@y%  
   \pgfsysprotocol@flushcurrentprotocol%
-  \HCode{<object data="\jobname-\the\pgf@sys@svg@picnum.svg" width="}%
+  \HCode{<object data="\jobname.svg" width="}%
   % Calculate pixel coordinates (this does not really make sense, but
   % we have to do it anyway). Assume 96dpi.
   \pgf@x=1.3333333\pgf@x%
@@ -173,7 +173,7 @@
   \pgf@sys@pt\pgf@y%
   \pgfsysprotocol@flushcurrentprotocol%
   \pgfsys@invoke{" type="image/svg+xml"><p>SVG-Viewer needed.</p></object>}%
-  \special{t4ht>\jobname-\the\pgf@sys@svg@picnum.svg}%
+  \special{t4ht>\jobname.svg}%
   %%%%%%%% This is necessary to control the svg through css
   \pgfkeys{%
     /pgf/tex4ht node/css/.get=\pgfsys@foreignobject@css
@@ -208,7 +208,7 @@
   \raise-\pgf@ya\box#1%
   \pgf@xa=\pgf@trimright@final\relax \ifdim\pgf@xa=0pt \else\kern\pgf@xa\fi
   \pgfsys@invoke{</g>\Hnewline </svg>\Hnewline }%
-  \special{t4ht<\jobname-\the\pgf@sys@svg@picnum.svg}%
+  \special{t4ht<\jobname.svg}%
 }%
 
 %% we'll use this hbox for the mtext rendering method (the "text only=true" option)

@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Eletrônica -- Familiarização com o Laboratório
+title: Prática 1 -- Familiarização com o Laboratório
 ---
 
-Eletrônica -- Familiarização com o Laboratório
-==============================================
+### {{ page.title }}
 {:.no_toc}
 
 Esta primeira prática tem como objetivo a familiarização com o ambiente de 
