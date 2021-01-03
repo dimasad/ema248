@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="pwm-led.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="412.08134pt" height="74.26671pt" viewBox="-164.34256 -32.06703 412.08134 74.26671 "> 
+<g transform="translate(0, 42.19968 ) scale(1,-1) translate(0,32.06703 )"> 
+                                                 <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <path d=" M  0.0 0.0 L  0.4 0.0 M  56.90549 0.0 M  0.0 0.0 L  25.03845 0.0 M  88.77252 0.0 L  113.81097 0.0 M  56.90549 13.14526 M  56.90549 13.14526 M  56.90549 26.06174 M  56.90549 26.06174 M  113.41098 0.0 L  113.81097 0.0 L  114.21097 0.0 M  170.71646 0.0 M  113.81097 0.0 L  154.78323 0.0 M  186.64969 0.0 L  227.62195 0.0 M  227.22195 0.0 L  227.62195 0.0  " style="fill:none"/>
+ <g>
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,-157.6766,-4.9443)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(37.65266,0)" text-anchor="middle"  font-size="10"> 
+Arduino digital 9</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,0.0,0.0)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(0.0,0)" text-anchor="middle"  font-size="10"> 
+</text> 
+</g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(100.0%,100.0%,100.0%)">
+ <path d=" M  3.18616 0.0 C  3.18616 1.75967 1.75967 3.18616 0.0 3.18616 C  -1.75967 3.18616 -3.18616 1.75967 -3.18616 0.0 C  -3.18616 -1.75967 -1.75967 -3.18616 0.0 -3.18616 C  1.75967 -3.18616 3.18616 -1.75967 3.18616 0.0 Z M  0.0 0.0  " />
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.79999pt">
+ <g stroke-linejoin="bevel">
+ <path d=" M  24.63846 0.0 L  30.38293 11.9502 L  41.0719 -11.9502 L  51.76086 11.9502 L  62.44983 -11.9502 L  73.1388 11.9502 L  83.82776 -11.9502 L  89.17224 0.0  " style="fill:none"/>
+ <g stroke-width="0.4pt">
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,56.90549,0.0)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(0.0,0)" text-anchor="middle"  font-size="10"> 
+</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,33.01648,21.75626)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(11.9445,0)" text-anchor="middle"  font-size="10"> 
+180  &#x03A9;</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.79999pt">
+ <g>
+ <path d=" M  186.64969 0.0 L  154.78323 19.91684 L  154.78323 -19.91684 L  186.64969 0.0  " style="fill:none"/>
+ </g>
+ <path d=" M  186.64969 -19.91684 L  186.64969 19.91684  " style="fill:none"/>
+ <g stroke-width="0.4pt">
+ <path d=" M  164.34329 19.91684 L  178.76996 37.95047  " style="fill:none"/>
+ <g>
+ <g transform="matrix(0.62773,0.78468,-0.78468,0.62773,178.76996,37.95047)">
+ <g>
+ <path d=" M  2.39996 0.0 C  1.39998 0.2 -0.4 0.59999 -1.59998 1.49997 C  -0.59999 0.4 -0.59999 -0.4 -1.59998 -1.49997 C  -0.4 -0.59999 1.39998 -0.2 2.39996 0.0 Z  " style="stroke:none"/>
+ </g>
+  </g>
+ </g>
+ <path d=" M  173.90305 15.9335 L  188.32974 33.96713  " style="fill:none"/>
+ <g>
+ <g transform="matrix(0.62773,0.78468,-0.78468,0.62773,188.32974,33.96713)">
+ <g>
+ <path d=" M  2.39996 0.0 C  1.39998 0.2 -0.4 0.59999 -1.59998 1.49997 C  -0.59999 0.4 -0.59999 -0.4 -1.59998 -1.49997 C  -0.4 -0.59999 1.39998 -0.2 2.39996 0.0 Z  " style="stroke:none"/>
+ </g>
+  </g>
+ </g>
+ <g stroke-width="0.4pt">
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,170.71646,0.0)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(0.0,0)" text-anchor="middle"  font-size="10"> 
+</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,227.62195,0.0)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(0.0,0)" text-anchor="middle"  font-size="10"> 
+</text> 
+</g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <path d=" M  227.62195 0.0 L  227.62195 -19.91684  " style="fill:none"/>
+ <path d=" M  207.70511 -19.91684 L  247.53879 -19.91684  " style="fill:none"/>
+ <g stroke-width="0.4pt">
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <path d=" M  211.68845 -23.90015 L  243.55545 -23.90015 M  215.67175 -27.88345 L  239.57214 -27.88345 M  219.65533 -31.86703 L  235.58856 -31.86703  " style="fill:none"/>
+ <g stroke-width="0.4pt">
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                                                                                                                            </g> 
+</svg> 

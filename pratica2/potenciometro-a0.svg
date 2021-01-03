@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="potenciometro-a0.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="205.00032pt" height="119.89616pt" viewBox="-14.16702 -32.06703 205.00032 119.89616 "> 
+<g transform="translate(0, 87.82913 ) scale(1,-1) translate(0,32.06703 )"> 
+    <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <path d=" M  0.0 0.0 L  0.4 0.0 M  85.35822 0.0 M  0.0 0.0 L  53.49118 0.0 M  117.22525 0.0 L  170.71646 0.0 M  170.31647 0.0 L  170.71646 0.0  " style="fill:none"/>
+ <g>
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,-14.16702,38.75519)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(7.08351,0)" text-anchor="middle"  font-size="10"> 
+5 V</text> 
+</g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <path d=" M  0.0 0.0 L  0.0 23.89984  " style="fill:none"/>
+ <g stroke-width="0.79999pt">
+ <path d=" M  -7.96661 12.74661 L  0.0 23.89984 L  7.96661 12.74661  " style="fill:none"/>
+ <g stroke-width="0.4pt">
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.79999pt">
+ <g stroke-linejoin="bevel">
+ <path d=" M  53.09119 0.0 L  58.83566 11.9502 L  69.52463 -11.9502 L  80.2136 11.9502 L  90.90256 -11.9502 L  101.59152 11.9502 L  112.28049 -11.9502 L  117.62497 0.0  " style="fill:none"/>
+ <g>
+ <path d=" M  85.35822 31.86703 L  85.35822 15.07013  " style="fill:none"/>
+ <g>
+ <g transform="matrix(0.0,-1.0,1.0,0.0,85.35822,15.07013)">
+ <g>
+ <path d=" M  3.11993 0.0 C  1.81996 0.26 -0.51999 0.77998 -2.07996 1.94995 C  -0.77998 0.51999 -0.77998 -0.51999 -2.07996 -1.94995 C  -0.51999 -0.77998 1.81996 -0.26 3.11993 0.0 Z  " style="stroke:none"/>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g stroke-width="0.4pt">
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,85.35822,0.0)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(0.0,0)" text-anchor="middle"  font-size="10"> 
+</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,170.71646,0.0)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(0.0,0)" text-anchor="middle"  font-size="10"> 
+</text> 
+</g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <path d=" M  170.71646 0.0 L  170.71646 -19.91684  " style="fill:none"/>
+ <path d=" M  150.79962 -19.91684 L  190.6333 -19.91684  " style="fill:none"/>
+ <g stroke-width="0.4pt">
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <path d=" M  154.78296 -23.90015 L  186.64996 -23.90015 M  158.76627 -27.88345 L  182.66666 -27.88345 M  162.74985 -31.86703 L  178.68307 -31.86703  " style="fill:none"/>
+ <g stroke-width="0.4pt">
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <path d=" M  85.35822 31.86703 L  85.35822 32.26703 M  85.35822 46.09338 M  85.35822 31.86703 L  85.35822 46.09338 M  85.35822 46.09338 L  85.35822 60.31976 M  85.35822 60.31976 M  85.35822 59.91977 L  85.35822 60.31976  " style="fill:none"/>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <g transform="matrix(0.0,2.0,-2.0,0.0,85.35822,46.09338)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(0.0,0)" text-anchor="middle"  font-size="10"> 
+</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,85.35822,60.31976)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(0.0,0)" text-anchor="middle"  font-size="10"> 
+</text> 
+</g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(100.0%,100.0%,100.0%)">
+ <path d=" M  88.54437 60.31976 C  88.54437 62.07944 87.11789 63.50592 85.35822 63.50592 C  83.59854 63.50592 82.17206 62.07944 82.17206 60.31976 C  82.17206 58.56009 83.59854 57.1336 85.35822 57.1336 C  87.11789 57.1336 88.54437 58.56009 88.54437 60.31976 Z M  85.35822 60.31976  " />
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(2.0,0.0,0.0,2.0,49.77496,67.38571)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(17.79163,0)" text-anchor="middle"  font-size="10"> 
+Ard. A0</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                                                              </g> 
+</svg> 
