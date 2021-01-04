@@ -99,13 +99,14 @@ fixa do material entre os terminais _A_ e _B_.
 %}
 
 Na aplicação mais comum com o Arduino, os terminais fixos do potenciômetro são
-ligados entre o terra e o 5V. Além disso, o terminal móvel é conectado a algum
+ligados entre o terra e o 5&nbsp;V.
+Além disso, o terminal móvel é conectado a algum
 circuito de medição com alta resistência de entrada, de forma que a corrente
 por ele seja desprezível. Dessa forma, a tensão no terminal móvel é
 proporcional à sua posição:
 
 $$
-  V_m = p \cdot 5V.
+  V_m = p V_{AB} = p \cdot 5\,\mathrm{V}.
 $$
 
 #### Aplicações aeronáuticas
@@ -186,7 +187,8 @@ analógicos e digitais.
 > Básicos do Arduino, cujo código vem junto com a IDE e pode ser acessado
 > através do menu _Arquivo_ $$\to$$ _Exemplos_ $$\to$$ _01.Basics_
 > $$\to$$ _[AnalogReadSerial]_. Este procedimento mostra como utilizar
-> elementos que são importantes para as outras atividades da prática.
+> elementos que são importantes para as outras atividades da prática mas não
+> precisa ser entregue para avaliação.
 >
 > Para começar, monte no protoboard o circuito mostrado na figura abaixo, onde
 > um potenciômetro tem seus terminais fixos ligados à alimentação e o terminal
@@ -238,7 +240,7 @@ analógicos e digitais.
 > ```
 >
 > <figure>
->   <img src="/assets/images/monitor_serial_volt.png" class="figure-img"
+>   <img src="monitor_serial_volt.png" class="figure-img"
 >        style="width: 95%"/>
 >   <figcaption class="figure-caption" markdown="span">
 >     Dados enviados pelo Arduino, vistos com o _Monitor Serial_.
@@ -246,7 +248,7 @@ analógicos e digitais.
 > </figure>
 >
 > <figure>
->   <img src="/assets/images/plotter_serial_volt.png" class="figure-img" 
+>   <img src="plotter_serial_volt.png" class="figure-img" 
 >        style="width: 95%"/>
 >   <figcaption class="figure-caption" markdown="span">
 >     Dados enviados pelo Arduino, vistos com o _Plotter Serial_. A tensão
@@ -293,8 +295,7 @@ O argumento `razao_ciclica` é um número de 0 a 255, correspondendo a uma razã
 de 0% a 100%.
 Confira a documentação oficial da função [analogWrite] para maiores informações.
 
-> Montagem: PWM para alterar o brilho de um LED
-> ---------------------------------------------
+> ### Montagem: PWM para alterar o brilho de um LED
 >
 > Vamos então fazer uma montagem (ou simulação) simples para explorar o uso
 > do PWM: utilizá-lo no acionamento de um LED para alterar a intensidade do
@@ -302,7 +303,7 @@ Confira a documentação oficial da função [analogWrite] para maiores informa�
 > junto com a IDE e pode ser acessado através do menu _Arquivo_ $$\to$$
 > _Exemplos_ $$\to$$ _01.Basics_ $$\to$$ _[Fade]_. Este procedimento mostra
 > como utilizar elementos que são importantes para as outras atividades desta
-> prática e da próxima.
+> prática e da próxima, mas não precisa ser entregue para avaliação.
 >
 > Este procedimento utiliza o circuito representado no diagrama esquemático
 > abaixo. O LED é alimentado pela saída digital número 9 do Arduino.
@@ -313,7 +314,7 @@ Confira a documentação oficial da função [analogWrite] para maiores informa�
 > segurança.
 >
 > <figure>
->   <img src="/assets/images/pwm-led.svg" class="figure-img"
+>   <img src="pwm-led.svg" class="figure-img"
 >        style="width: 65%"/>
 >   <figcaption class="figure-caption" markdown="span">
 >     Montagem para acionamento do LED por PWM.
@@ -344,8 +345,7 @@ Confira a documentação oficial da função [analogWrite] para maiores informa�
 > }
 > ```
 
-> Atividade: Comando do brilho do LED com potenciômetro
-> -----------------------------------------------------
+> ### Atividade para entrega: Comando do brilho do LED com potenciômetro
 > 
 > Temos agora uma atividade simples que utiliza tanto as leituras analógicas 
 > quanto a modulação por largura de pulso: comandar o brilho do LED com o 
@@ -355,20 +355,21 @@ Confira a documentação oficial da função [analogWrite] para maiores informa�
 > apagado. Nas posições intermediárias o brilho deverá ser proporcional à tensão
 > medida. Observe que a conexão entre o potenciômetro e o LED deve ser feita em
 > software, e **não** colocando o potenciômetro em série com o LED. O resistor
-> $$R$$ é o mesmo da montagem anterior.
+> do LED é o mesmo da montagem anterior.
 >
 > <figure>
 >   <img src="potenciometro-a0.svg" class="figure-img" />
->   <img src="/assets/images/pwm-led.svg" class="figure-img" />
+>   <img src="pwm-led.svg" class="figure-img" />
 >   <figcaption class="figure-caption" markdown="span">
 >     Montagem para comando do brilho do LED com potenciômetro, uma combinação
 >      das montagens feitas anteriormente.
 >   </figcaption>
 > </figure>
 > 
-> Para quem fizer por simulação, salve a montagem no Tinkercad com o nome 
-> "Prática 2 - PWM". Para quem fizer com os componentes, basta incluir o
-> código e uma foto da montagem no relatório.
+> Para quem fizer por simulação, basta salvar a montagem no Tinkercad com o
+> nome "Prática 2 - PWM", e não será necessário enviar um relatório.
+> Para quem fizer com os componentes, inclua o código e uma foto da montagem em
+> um breve relatório e submeta no Moodle.
 
 [analogRead]: https://www.arduino.cc/reference/pt/language/functions/analog-io/analogread/
 [analogWrite]: https://www.arduino.cc/reference/pt/language/functions/analog-io/analogwrite/

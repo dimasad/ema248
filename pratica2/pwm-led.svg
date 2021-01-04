@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
 <?xml-stylesheet href="pwm-led.css" type="text/css"?> 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="412.08134pt" height="74.26671pt" viewBox="-164.34256 -32.06703 412.08134 74.26671 "> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332.9152pt" height="74.26671pt" viewBox="-85.17642 -32.06703 332.9152 74.26671 "> 
 <g transform="translate(0, 42.19968 ) scale(1,-1) translate(0,32.06703 )"> 
-                                                 <g>
+                          <g>
  <g stroke="rgb(0.0%,0.0%,0.0%)">
  <g fill="rgb(0.0%,0.0%,0.0%)">
  <g stroke-width="0.4pt">
@@ -10,10 +10,10 @@
  <path d=" M  0.0 0.0 L  0.4 0.0 M  56.90549 0.0 M  0.0 0.0 L  25.03845 0.0 M  88.77252 0.0 L  113.81097 0.0 M  56.90549 13.14526 M  56.90549 13.14526 M  56.90549 26.06174 M  56.90549 26.06174 M  113.41098 0.0 L  113.81097 0.0 L  114.21097 0.0 M  170.71646 0.0 M  113.81097 0.0 L  154.78323 0.0 M  186.64969 0.0 L  227.62195 0.0 M  227.22195 0.0 L  227.62195 0.0  " style="fill:none"/>
  <g>
  <g>
- <g transform="matrix(2.0,0.0,0.0,2.0,-157.6766,-4.9443)">
+ <g transform="matrix(2.0,0.0,0.0,2.0,-78.51047,-6.88873)">
  <g fill="rgb(0.0%,0.0%,0.0%)">
- <text style="stroke:none" transform="scale(1,-1) translate(37.65266,0)" text-anchor="middle"  font-size="10"> 
-Arduino digital 9</text> 
+ <text style="stroke:none" transform="scale(1,-1) translate(17.86113,0)" text-anchor="middle"  font-size="10"> 
+Ard. D9</text> 
 </g>
  </g>
  </g>
@@ -77,7 +77,7 @@ Arduino digital 9</text>
  <g transform="matrix(2.0,0.0,0.0,2.0,33.01648,21.75626)">
  <g fill="rgb(0.0%,0.0%,0.0%)">
  <text style="stroke:none" transform="scale(1,-1) translate(11.9445,0)" text-anchor="middle"  font-size="10"> 
-180  &#x03A9;</text> 
+220  &#x03A9;</text> 
 </g>
  </g>
  </g>
@@ -161,5 +161,5 @@ Arduino digital 9</text>
  </g>
  </g>
  
-                                                                                                                            </g> 
+                                                                                                    </g> 
 </svg> 
