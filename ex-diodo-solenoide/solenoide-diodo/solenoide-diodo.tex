@@ -11,6 +11,7 @@
 \usepackage[usenames,dvipsnames,svgnames]{xcolor}
 
 %% Plots, figures and Tikz
+%\def\pgfsysdriver{pgfsys-tex4ht.def}
 \usepackage{tikz}
   \tikzset{
     every picture/.append style={scale=2}, 
@@ -37,7 +38,17 @@
 \begin{document}
 \begin{tikzpicture}
   \draw (0,0) 
-    to[L=$L$, o-] ++(1.6, 0)
-    to[R=$R$, -o] ++(1.6, 0);
+    to[battery, l=$V_a$, invert] ++(0, 3.2)
+    to[push button] ++(2, 0)
+    coordinate (n1)
+    to[L=$L$, f_>=$i_s$, *-] ++(0, -1.6)
+    to[R=$R$, -*] ++(0, -1.6)
+    coordinate (n2)
+    -| (0, 0);
+
+  \draw (n1)
+    -- ++(1.5, 0)
+    to[D*, f<=$i_d$, invert] ++(0, -3.2)
+    -| (n2);
 \end{tikzpicture}
 \end{document}
