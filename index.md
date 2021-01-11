@@ -3,10 +3,11 @@ layout: default
 title: Práticas e Exercícios
 ---
 
-{::comment} 
 ### Exercícios
 
-* [Diodo de roda livre][ex-diodo].
+* [Diodo de roda livre](ex-diodo-solenoide/).
+
+{::comment} 
 * [Análise e dimensionamento de circuitos com transistores][ex-npn].
 {:/comment} 
 
@@ -20,5 +21,4 @@ title: Práticas e Exercícios
 [pratica3]: pratica3/
 [pratica4]: pratica4/
 [praticas-ere]: praticas-ere/
-[ex-diodo]: ex-diodo-solenoide/
 [ex-npn]: ex-npn/

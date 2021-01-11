@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Eletrônica -- Exercício Sobre Diodos
+title: Exercício -- Diodo de roda livre
 ---
 
 {{page.title}}
