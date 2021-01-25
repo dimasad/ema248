@@ -1,0 +1,53 @@
+\documentclass{standalone}
+
+\usepackage[portuguese]{babel}
+\usepackage{lmodern}
+
+\usepackage{siunitx}
+  \sisetup{output-decimal-marker={,}}
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+
+%% Plots, figures and Tikz
+\usepackage{tikz}
+  \tikzset{
+    every picture/.append style={scale=2}, 
+    every node/.style={transform shape}
+  }
+  \usetikzlibrary{arrows}
+    \tikzset{>=stealth}
+  \usetikzlibrary{calc}
+  \usetikzlibrary{intersections}
+  \usetikzlibrary{plotmarks}
+  \usetikzlibrary{positioning}
+\usepackage{pgfplots}
+  \usepgfplotslibrary{groupplots}
+  \usepgfplotslibrary{statistics}
+  \pgfplotsset{compat=newest}
+  \pgfplotsset{
+    log ticks with fixed point,
+    clip marker paths=true,
+  }
+\usepackage[siunitx]{circuitikz}
+  \ctikzset{american voltages}
+
+
+\begin{document}
+\begin{tikzpicture}
+  \draw (0,0) 
+    node[anchor=south, align=center] {Arduino\\Digital 9}
+    node[ocirc] {}
+    to [short, f_=$i_B$] ++(1, 0)
+    node[npn, anchor=B] (T1) {}
+    (T1.east)
+    node[anchor=west]  {}
+    (T1.C)
+    node[vcc] (vcc) {\SI{5}{V}}
+    (T1.E)
+    to[R=$R$] ++(0, -1.5)
+    to[led, l_=] ++(0, -1.5)
+    node[ground] {};
+\end{tikzpicture}
+\end{document}
