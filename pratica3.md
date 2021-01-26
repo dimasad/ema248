@@ -7,8 +7,8 @@ title: Prática 3 -- Acionamento de um LED com transistor seguidor de emissor
 ### {{ page.title }}
 {:.no_toc}
 
-O objetivo desta prática é analisar uma aplicação de um transistor bipolar
-no modo ativo, para amplificação de corrente. Primeiro um circuito será 
+O objetivo desta prática é analisar a aplicação de um transistor bipolar
+no modo ativo para amplificação de corrente. Primeiro um circuito será 
 dimensionado com base em uma especificação de desempenho e as folhas de dados
 dos dispositivos escolhidos. Em seguida, um circuito semelhante deverá ser 
 montado no ambiente de simulação e alguns de seus parâmetros medidos.
@@ -69,7 +69,7 @@ Atividade para entrega: Simulação
 ---------------------------------
 
 Simule agora esse circuito no tinkercad com $$R=120\,\Omega$$.
-Acione o LED com a saída digital e meça as seguintes grandezas no circuito:
+Acione o LED com a saída digital e meça as seguintes grandezas:
 
 1. a corrente de base no transistor;
 2. a corrente no LED;
@@ -78,7 +78,7 @@ Acione o LED com a saída digital e meça as seguintes grandezas no circuito:
 Lembre-se que o amperímetro deve ser ligado em série com o circuito de 
 interesse. Já o voltímetro, por outro lado, deve ser ligado em paralelo.
 Coloque os valores medidos no relatório. Observe que tanto o LED quanto o 
-transistor do Tinkercad são um pouco diferentes dos dispositivos analisados
+transistor NPN do Tinkercad são um pouco diferentes dos dispositivos analisados
 na atividade anterior, mas seu comportamento qualitativo é muito parecido.
 
 [BC549]: BC549_npn.pdf
