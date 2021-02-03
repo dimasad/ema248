@@ -16,6 +16,7 @@ title: Práticas e Exercícios
 * [Prática 1: Familiarização com o Laboratório][pratica1].
 * [Prática 2: Leitura analógica, Potenciômetro, e PWM][pratica2].
 * [Prática 3: Acionamento de um LED com seguidor de emissor][pratica3].
+* [Prática 4: Acionamento de um motor CC com um transistor NPN][pratica4].
 
 [pratica1]: pratica1/
 [pratica2]: pratica2/

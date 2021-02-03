@@ -97,10 +97,11 @@ Com esse circuito, faça as atividades abaixo.
 
 > ## Atividade para entrega: Quedas de tensão no transistor
 >
-> Nesta outra atividade para entrega, 
-> 
-> **Dica:** Utilize as funções [analogRead] e [analogWrite] como feito na 
-> prática 2.
+> Nesta outra atividade para entrega, meça com um voltímetro as quedas de tensão
+> entre a base e o emissor $$v_{be}$$, e entre o coletor e o emissor $$v_{ce}$$
+> quando a saída do Arduino estiver em nível lógico alto. Com base nas medidas,
+> em que modo o transistor está operando? Avalie se a aproximação de chave 
+> fechada é razoável nesta aplicação. Coloque essas respostas no relatório.
 
 [L293D]: https://www.ti.com/lit/ds/symlink/l293.pdf
 
