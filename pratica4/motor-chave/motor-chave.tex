@@ -1,0 +1,56 @@
+\documentclass{standalone}
+
+\usepackage[portuguese]{babel}
+\usepackage{lmodern}
+
+\usepackage{siunitx}
+  \sisetup{output-decimal-marker={,}}
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+
+%% Plots, figures and Tikz
+\usepackage{tikz}
+  \tikzset{
+    every picture/.append style={scale=2}, 
+    every node/.style={transform shape}
+  }
+  \usetikzlibrary{arrows}
+    \tikzset{>=stealth}
+  \usetikzlibrary{calc}
+  \usetikzlibrary{intersections}
+  \usetikzlibrary{plotmarks}
+  \usetikzlibrary{positioning}
+\usepackage{pgfplots}
+  \usepgfplotslibrary{groupplots}
+  \usepgfplotslibrary{statistics}
+  \pgfplotsset{compat=newest}
+  \pgfplotsset{
+    log ticks with fixed point,
+    clip marker paths=true,
+  }
+\usepackage[siunitx]{circuitikz}
+  \ctikzset{american voltages}
+
+
+\begin{document}
+\begin{tikzpicture}
+  \draw (0,0) 
+    node[vcc] (vcc) {\SI{5}{V}}
+    to[Telmech=M, n=motor] ++(0, -1.5)
+    node[circ] (n1) {}
+    to[nos, n=chave] ++(0, -1)
+    node[ground] {};
+
+  \draw (n1)
+    to[short] ++(-1, 0)
+    to[diode, l={\color{DarkBlue}1N4007}] ++(0, 1.5)
+    |- (vcc.center)
+    node[circ] {};
+
+  \node[color=DarkBlue, anchor=west] at (motor.west) {motor};
+  \node[color=DarkBlue, anchor=east, align=center] at (chave) 
+    {modelo do\\transistor};
+\end{tikzpicture}
+\end{document}
