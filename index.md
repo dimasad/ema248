@@ -6,6 +6,7 @@ title: Práticas e Exercícios
 ### Exercícios
 
 * [Diodo de roda livre](ex-diodo-solenoide/).
+* [Fotodiodo](ex-fotodiodo/).
 
 {::comment} 
 * [Análise e dimensionamento de circuitos com transistores][ex-npn].
