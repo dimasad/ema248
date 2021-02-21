@@ -9,13 +9,13 @@ title: Prática 5 -- Acionamento de um motor CC com ponte H
 
 O objetivo desta prática e da anterior é fazer o acionamento de um motor de
 corrente contínua com o Arduino. Na prática anterior, o motor foi acionado em
-somente um sentido, utilizando um transistor NPN. Nesta, será acionado
-nos dois sentidos utilizando a ponte H do circuito integrado [L293D].
+somente um sentido, utilizando um único transistor NPN. Nesta, o motor será
+acionado nos dois sentidos utilizando a ponte H do circuito integrado [L293D].
 Essas aplicações são representativas do acionamento de cargas de potência
 com dispositivos eletrônicos. Variações desses circuitos são utilizados, por
 exemplo, para acionamento de placas de Peltier para aquecimento ou resfriamento,
 solenóides, motores de passo, e motores de corrente alternada sem escovas
-(_brushless_) ou de indução.
+(_brushless_).
 
 **Tópicos:**
 * Procedimento x
@@ -37,7 +37,7 @@ de alimentação $$V_{\operatorname{CC}}$$.
 Quando a chave baixa (L) está fechada, o nó de saída é conectado ao terminal 
 ao terra.
 Note que as chaves superior e inferior de uma mesma meia ponte não podem ser
-fechadas ao mesmo tempo, ou temos um curto-circuito.
+fechadas ao mesmo tempo, senão teríamos um curto-circuito.
 
 {%
    include figure.html
@@ -130,14 +130,17 @@ terminais do motor. Os demais pinos não precisam ser conectados.
 > tensão no motor. Quando o potenciômetro estiver na posição central o motor
 > deverá estar parado, quando estiver em um extremo o motor deverá ser acionado
 > com 5V e quando estiver no outro extremo o motor deverá ser acionado com 
-> tensão -5V. Nas posições intermediárias a tesão no motor deverá ser
+> tensão -5V. Nas posições intermediárias a tensão no motor deverá ser
 > proporcional à posição do potenciômetro.
 >
 > Observe que o ponteciômetro deverá somente servir como interface para o
 > comando do usuário, sua conexão com a ponte H é feita exclusivamente por 
-> software. Para quem fizer por meio de simulação, salve no Tinkercad com o
-> nome de "Prática 3: Ponte". Quem fizer as montagens com os componentes
-> reais, envie uma foto do circuito e o código do Arduino no Moodle.
+> software. Salve no Tinkercad com o nome de "Prática 5".
+>
+> Utilizando um voltímetro, meça a tensão no motor quando o comando do 
+> potenciômetro estiver em cada um dos extremos. Qual é a queda de tensão
+> nos transistores da ponte?
+
 
 [L293D]: L293D.pdf
 
