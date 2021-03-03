@@ -1,0 +1,81 @@
+\documentclass{standalone}
+
+\usepackage[portuguese]{babel}
+\usepackage{lmodern}
+
+\usepackage{siunitx}
+  \sisetup{output-decimal-marker={,}}
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+
+%% Plots, figures and Tikz
+\usepackage{tikz}
+  \tikzset{
+    every picture/.append style={scale=2}, 
+    every node/.style={transform shape}
+  }
+  \usetikzlibrary{arrows}
+    \tikzset{>=stealth}
+  \usetikzlibrary{calc}
+  \usetikzlibrary{intersections}
+  \usetikzlibrary{plotmarks}
+  \usetikzlibrary{positioning}
+\usepackage{pgfplots}
+  \usepgfplotslibrary{groupplots}
+  \usepgfplotslibrary{statistics}
+  \pgfplotsset{compat=newest}
+  \pgfplotsset{
+    log ticks with fixed point,
+    clip marker paths=true,
+  }
+\usepackage[siunitx]{circuitikz}
+  \ctikzset{american voltages}
+
+
+\begin{document}
+\begin{tikzpicture}
+  \draw (0,0) 
+    node[op amp] (U) {}
+    (U.+)
+    to[short] ++(-0.5, 0)
+    node[ground] {}
+    (U.-)
+    to[short, *-] ++(-0.1, 0)
+    to[R, l_={$R_1$}] ++(-1.5, 0)
+    to[C, l_={$C$}] ++(-1, 0)    
+    to[short, -] ++(-0.3, 0)
+    to[sV, n=gs, v_=$v_e$] ++(0, -1.5)
+    ++(0, 0.2)
+    node[ground] {}
+    (gs)
+    node[left=1em, align=right] {}
+    (U.-)
+    -- ++(0, 1)
+    coordinate (n1)
+    to[R, l=$R_2$] ++(2.5, 0)
+    coordinate (n2);
+
+  \draw 
+    (n2)
+    |- (U.out)
+    coordinate[midway] (n3);
+  
+  \draw
+    (n3)
+    to[short, *-o] ++(0.3, 0)
+    coordinate (a1)
+    ++(0, -0.8)
+    node[ocirc] (a2) {}
+    node[ground] {};
+
+  \path 
+    (a1)
+    ++(0.3, 0)
+    node {$+$}
+    |- (a2)
+    node[pos=0.25] {$v_s$}
+    node[midway] {$-$};
+\end{tikzpicture}
+\end{document}
