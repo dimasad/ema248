@@ -20,11 +20,13 @@ title: Práticas e Exercícios
 * [Prática 3: Acionamento de um LED com seguidor de emissor][pratica3].
 * [Prática 4: Acionamento de um motor CC com um transistor NPN][pratica4].
 * [Prática 5: Acionamento de um motor CC com uma ponte H][pratica5].
+* [Prática 6: Filtro ativo e amplificador operacional][pratica6].
 
 [pratica1]: pratica1/
 [pratica2]: pratica2/
 [pratica3]: pratica3/
 [pratica4]: pratica4/
 [pratica5]: pratica5/
+[pratica6]: pratica6/
 [praticas-ere]: praticas-ere/
 [ex-npn]: ex-npn/
