@@ -61,10 +61,11 @@ cumprir várias funções nos circuitos em que é utilizado.
 > filtro, qualitativamente, como passa-baixas, passa-altas, passa-faixa ou 
 > rejeita-faixa.
 >
+> Calcule a resposta em frequência do filtro e compare com os valores medidos.
+>
 > Aumente gradativamente a amplitude da tensão de entrada até observar a
 > saturação da saída, em uma frequência em que o filtro tenha alto ganho.
-> Qual o valor da tensão de saturação? Esse valor é coerente com o informado
-> na folha de dados?
+> Qual o valor da tensão de saturação?
 >
 > Entregue um breve relatório com os dados obtidos e a análise. Salve a
 > montagem no Tinkercad como "Prática 6".
