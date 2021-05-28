@@ -13,20 +13,18 @@ duas maneiras:
 - por simulação no [Tinkercad], ou
 - montagens físicas com os componentes em casa.
 
-Os roteiros das práticas tem 2 tipos de experimentos, as _Montagens_, que são
-demonstrações exploratórias para entender melhor os conceitos; e as 
-_Atividades_, que são problemas que eu peço a solução ou medições específicas.
-Não é necessário entregar (ou mesmo fazer) as _Montagens_, mas elas são pensadas
-para a desenvolver os conceitos que serão necessários para as _Atividades_
-da prática ou de práticas futuras. Em cada atividade eu peço algumas 
-informações, que deverão ser entregues no relatório da prática.
-
+Nos roteiros das práticas haverá indicação das informações que deverão ser 
+incluídas no relatório, que deverá ser entregue no Moodle.
+Para quem fizer as práticas simuladas, a montagem final deverá ser salva no
+Tinkercad, para correção.
 Como algumas práticas requerem alguns componentes especiais e caros de se ter
 em casa, só haverá a opção de fazer no ambiente simulado. No entanto, algumas
 práticas mais simples poderão ser feitas com montagens físicas se os alunos
 tiverem os componentes sugeridos. Em alguns casos será possível fazer 
 substituições, como trocar o modelo do transistor, diodo, placa 
-microcontroladora ou ponte H.
+microcontroladora ou ponte H. 
+Para maiores informações sobre trocas de componentes, entre em contato comigo
+por e-mail.
 
 Informações para as práticas simuladas
 --------------------------------------

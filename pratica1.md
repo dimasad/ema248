@@ -7,9 +7,10 @@ title: Prática 1 -- Familiarização com o Laboratório
 {:.no_toc}
 
 Esta primeira prática tem como objetivo a familiarização com o ambiente de 
-simulação e os principais elementos do laboratório de eletrônica. O [Tinkercad]
-foi escolhido para simulação pois simula vários dos componentes que utilizamos
-no laboratório, de uma maneira muito semelhante à que fazemos experimentalmente.
+simulação e os principais elementos do laboratório de eletrônica. 
+O [Tinkercad] foi escolhido para as práticas no ensino remoto emergencial pois 
+simula vários dos componentes que utilizamos no laboratório, de uma maneira
+muito semelhante à que é feita presencialmente.
 Nesta prática, iremos ver o uso do Arduino, do protoboard, e de LEDs.
 Antes de começar, crie uma conta no Tinkercad e entre na sala de aula virtual,
 conforme orientações na página de 
@@ -85,7 +86,8 @@ O código que estiver no
 corpo da função `setup` será executado uma vez, quando a placa for energizada, 
 geralmente para configurar a placa e inicializar as variáveis do programa.
 Já o código que estiver no corpo da função `loop` será executado repetidamente 
-até a placa ser desligada; esse código contém a lógica de execução do programa.
+até a placa ser desligada; esse código contém a lógica principal de execução do
+programa.
 Todo o texto que estiver depois dos caracteres `//` é um comentário.
 
 ```
@@ -309,9 +311,9 @@ Monte o circuito no Tinkercad, simule, e verifique se o LED acende.
 > do LED seja de 5&nbsp;mA, 10&nbsp;mA e 20&nbsp;mA. Considere a queda de 
 > tensão no LED, o parâmetro $$V_K$$ do modelo, igual a 2&nbsp;V.
 > Simule o circuito com esses valores de resistência e meça a corrente
-> através do LED com um multímetro. Mostre no relatório o valor de resistência
-> escolhido e a corrente medida. Salve a montagens com um dos resistores no
-> Tinkercad como "Prática 1---LED".
+> através do LED com um multímetro. Mostre no relatório a imagem da montagem
+> do circuito, o valor de resistência escolhido e a corrente medida. Salve a
+> montagem com um dos resistores no Tinkercad como "Prática 1---LED".
 >
 > **Obs.:** o modo de medição de corrente do multímetro do Tinkercad também
 > foi incorretamente traduzido como "Amperagem". Lembre também que o amperímetro
@@ -364,6 +366,11 @@ void loop() {
   delay(1000); // Aguarda 1s
 }
 ```
+
+> ### Atividade para entrega
+>
+> Inclua no relatório a imagem da montagem do circuito da Figura&nbsp;7.
+
 
 [arduino-ref]: https://www.arduino.cc/reference/pt/
 [Arduino Cookbook]: https://www.oreilly.com/library/view/arduino-cookbook/9781449399368/
