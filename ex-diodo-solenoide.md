@@ -3,6 +3,10 @@ layout: default
 title: Exercício -- Diodo de roda livre
 ---
 
+<style type="text/css">
+    ol { list-style-type: lower-alpha; }
+</style>
+
 {{page.title}}
 ==============
 
@@ -42,9 +46,10 @@ Modelo elétrico de uma solenóide
 
 O enrolamento da solenóide, usado para gerar o campo magnético que atrai o
 êmbolo, confere ao dispositivo uma indutância que está associada ao
-armazenamento de energia no campo magnético. Como o enrolamento geralmente é
-feito com um comprimento considerável de fio, temos também um efeito resistivo
-associado à dissipação de calor no enrolamento. Dessa forma, um modelo primário
+armazenamento de energia como fluxo magnético. Como o enrolamento geralmente é
+feito com um comprimento considerável de fio, temos também uma resistência
+elétrica, que está associada à dissipação de calor no enrolamento. Dessa forma,
+um modelo simples
 que representa bem o comportamento dominante do dispositivo é um indutor de
 indutância $$L$$ em série com um resistor de resistência $$R$$, como mostrado
 no circuito equivalente abaixo.
@@ -56,15 +61,18 @@ no circuito equivalente abaixo.
    caption="Circuito equivalente de uma solenóide."
 %}
 
-Atividade 1: acionamento de uma solenóide sem diodo
+Exercício 1: acionamento de uma solenóide sem diodo
 ---------------------------------------------------
 
-Abaixo temos um circuito de acionamento de uma solenóide com uma chave.
-Escreva a equação diferencial que rege esse circuito para a condição de chave
-fechada. Esboce o gráfico da corrente $$i$$ em função do tempo $$t$$ a partir
-do fechamento da chave, para a condição inicial de $$i=0$$ em $$t=0$$.
-No gráfico, indique o valor final da corrente em função dos parâmetros do
-circuito.
+Na Figura 2 temos o circuito de acionamento de uma solenóide com uma chave.
+Para esse circuito, responda às questões abaixo:
+
+1. Escreva a equação diferencial que rege esse circuito para a condição
+   de chave fechada.
+2. Esboce o gráfico da corrente $$i$$ em função do tempo $$t$$ a partir
+   do fechamento da chave, para a condição inicial de $$i=0$$ em $$t=0$$.
+3. Qual o valor final da corrente depois que a chave é fechada, em função dos
+   parâmetros do circuito?
 
 {%
    include figure.html
@@ -78,7 +86,7 @@ A equação diferencial resultante é de primeira ordem, e a resposta da corrent
 tem um formato exponencial. Uma maneira simples de se calcular a solução é
 utilizando a transformada de Laplace com condições iniciais nulas.
 
-Atividade 2: acionamento de uma solenóide com um diodo
+Exercício 2: acionamento de uma solenóide com um diodo
 ------------------------------------------------------
 
 No circuito anterior, se a chave for aberta com a corrente no seu valor de
@@ -88,7 +96,7 @@ do circuito de uma bobina grande pode ser visto nesta [demonstração do MIT].
 Temos também [outro vídeo][vid pg] com a mesma bobina, em câmera lenta, 
 resolução maior e uma breve explicação desse fenômeno físico. Basicamente, a
 faísca resulta da liberação quase instantânea da energia armazenada no indutor
-sob a forma de campo magnético.
+sob a forma de fluxo magnético.
 
 Diodos podem ser utilizados para evitar o comportamento observado nos vídeos.
 Na figura abaixo temos o circuito anterior com um diodo de proteção. O diodo,
@@ -112,12 +120,13 @@ Nashelsky), responda as questões abaixo.
 1. Escreva a equação diferencial que rege a descarga da solenóide
    (chave aberta, $$i_s>0$$), em função da tensão $$V_K$$ do diodo, a corrente
    $$i_s$$ e dos parâmetros do circuito $$L$$ e $$R$$.
-2. Esboce o gráfico da corrente $$i_s$$ em função do tempo, na descarga da solenóide.
+2. Esboce o gráfico da corrente $$i_s$$ em função do tempo, na descarga da 
+   solenóide.
 3. Nesse circuito, o que acontece com a energia armazenada na bobina, 
    durante a descarga?
 4. Quando $$V_K$$ é maior ou menor, como nos diodos de GaAs ou Germânio (veja
-   Fig. 1.18 de Boylestad e Nashelsky), a bobina se descarrega mais rápido ou mais
-   devagar? 
+   Fig. 1.18 de Boylestad e Nashelsky), a bobina se descarrega mais rápido ou 
+   mais devagar? 
 
 Comentários finais
 ------------------
