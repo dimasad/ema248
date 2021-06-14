@@ -11,9 +11,9 @@ Nesta prática, continuaremos abordando as funcionalidades básicas do Arduino e
 dispositivos comumente utilizados em projetos de eletrônica. Vamos começar com
 um texto apresentando a construção, modelo, e uso do pontenciômetro, que vai
 ser nosso dispositivo para enviar comandos de ajuste ao Arduino. Em seguida,
-eu explico o que é leitura analógica e como utilizá-la no Arduino. Esses dois
-assuntos são demonstrados com uma montagem de teste para vocês fazerem em casa,
-utilizando os componentes ou o ambiente de simulação do [Tinkercad].
+será explicado o que é leitura analógica e como utilizá-la no Arduino. 
+Esses dois assuntos são demonstrados com uma montagem de teste que pode ser
+simulada no [Tinkercad] ou montada em casa, para quem tiver os componentes.
 
 A prática termina com uma explicação da modulação por largura de pulso, que
 é a técnica utilizada para emular saídas analógicas com saídas digitais.
@@ -323,7 +323,7 @@ Confira a documentação oficial da função [analogWrite] para maiores informa�
 >
 > 
 > O código abaixo altera a razão cíclica periodicamente de 0 a 100% e de 
-> volta a 0%. Carrege-o, conecte à montage e observe o comportamento do LED.
+> volta a 0%. Carrege-o, conecte à montagem e observe o comportamento do LED.
 > 
 > ```c++
 > int pino_led = 9; // Número do pino do LED
@@ -366,10 +366,14 @@ Confira a documentação oficial da função [analogWrite] para maiores informa�
 >   </figcaption>
 > </figure>
 > 
-> Para quem fizer por simulação, basta salvar a montagem no Tinkercad com o
-> nome "Prática 2 - PWM", e não será necessário enviar um relatório.
-> Para quem fizer com os componentes, inclua o código e uma foto da montagem em
-> um breve relatório e submeta no Moodle.
+> Para quem fizer por simulação, salve a montagem no Tinkercad com o
+> nome "Prática 2 - PWM". Mostre no relatório a imagem da montagem e o código 
+> fonte do Arduino, com comentários para explicar a lógica do programa.
+>
+> **Dica:** observe que a saída analógica possui representação de 10 bits,
+> variando de 0 a 1023, enquanto que o gerador de PWM utiliza 8 bits, aceitando
+> valores de 0 a 255. Isso significa que o fator de conversão é de 2 bits, que
+> corresponde a $$2^2=4$$.
 
 [analogRead]: https://www.arduino.cc/reference/pt/language/functions/analog-io/analogread/
 [analogWrite]: https://www.arduino.cc/reference/pt/language/functions/analog-io/analogwrite/

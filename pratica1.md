@@ -196,7 +196,7 @@ void loop() {
 > - utilizando uma variável global para definir o valor do incremento do 
 > contador, e alterando esse valor ao chegar nos extremos.
 >
-> Consulte a [API do Arduino][arduino-ref]. Para maiores informações a respeito
+> Consulte a [API do Arduino][arduino-ref] para maiores informações a respeito
 > da linguagem.
 
 Acionamento de um LED
