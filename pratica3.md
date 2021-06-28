@@ -77,11 +77,14 @@ Acione o LED com a saída digital e meça as seguintes grandezas:
 2. a corrente no LED;
 3. a tensão base--emissor do transistor.
 
+Inclua no relatório a imagem da montagem do circuito, e o valor das grandezas
+medidas.
 Lembre-se que o amperímetro deve ser ligado em série com o circuito de 
 interesse. Já o voltímetro, por outro lado, deve ser ligado em paralelo.
 Coloque os valores medidos no relatório. Observe que tanto o LED quanto o 
 transistor NPN do Tinkercad são um pouco diferentes dos dispositivos analisados
 na atividade anterior, mas seu comportamento qualitativo é muito parecido.
+
 
 [BC549]: BC549_npn.pdf
 [Vishay]: https://www.vishay.com/
