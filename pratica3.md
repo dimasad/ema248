@@ -27,6 +27,7 @@ utilizado para acionamento de um LED com o Arduino, e sua função é diminuir
 a corrente fornecida pelos pinos digitais do microcontrolador. Assim é possível,
 por exemplo, comandar um LED de alta potência utilizando o Arduino e um 
 circuito relativamente simples. 
+
 {%
    include figure.html
    file="led-seg-emissor.svg"
@@ -48,7 +49,8 @@ Atividade para entrega: Dimensionamento
 Considere agora o dimensionamento do resistor $$R$$ para acionamento de um LED
 de potência modelo [VLWR9632], da [Vishay], cuja corrente nominal é de 
 70&#x202F;mA,
-bem acima do máximo que o Arduino pode suprir por seus pinos de saída digital.
+bem acima do máximo que o Arduino pode suprir por seus pinos de saída digital,
+20&#x202F;mA.
 Utilize as informações do transistor NPN de uso geral [BC549] para o 
 dimensionamento e análise. 
 
@@ -61,7 +63,7 @@ Para esse circuito:
    Figura&nbsp;2 das características de desempenho típico do transistor.
 2. Estime a corrente de base $$i_B$$ quando o LED estiver aceso. Para tal, 
    utilize o ganho de corrente CC típico do modo ativo, mostrado na 
-   Figura&nbsp;3.
+   Figura&nbsp;3 da folha de dados do transistor.
 3. Estime a potência dissipada no transistor. Esse valor está abaixo do máximo
    aceitável, de acordo com as informações da folha de dados?
 

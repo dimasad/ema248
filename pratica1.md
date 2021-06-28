@@ -369,7 +369,8 @@ void loop() {
 
 > ### Atividade para entrega
 >
-> Inclua no relatório a imagem da montagem do circuito da Figura&nbsp;7.
+> Inclua no relatório a imagem da montagem do circuito de acionamento com a 
+> saída digital, mostrado na Figura&nbsp;8.
 
 
 [arduino-ref]: https://www.arduino.cc/reference/pt/
