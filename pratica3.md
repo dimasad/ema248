@@ -77,7 +77,7 @@ Acione o LED com a saída digital e meça as seguintes grandezas:
 2. a corrente no LED;
 3. a tensão base--emissor do transistor.
 
-Inclua no relatório a imagem da montagem do circuito, e o valor das grandezas
+Inclua no relatório a imagem da montagem do circuito e o valor das grandezas
 medidas.
 Lembre-se que o amperímetro deve ser ligado em série com o circuito de 
 interesse. Já o voltímetro, por outro lado, deve ser ligado em paralelo.

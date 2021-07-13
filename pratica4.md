@@ -97,11 +97,29 @@ Com esse circuito, faça as atividades abaixo.
 
 > ## Atividade para entrega: Quedas de tensão no transistor
 >
-> Nesta outra atividade para entrega, meça com um voltímetro as quedas de tensão
+> Nesta atividade para entrega, meça com um voltímetro as quedas de tensão
 > entre a base e o emissor $$v_{be}$$, e entre o coletor e o emissor $$v_{ce}$$
 > quando a saída do Arduino estiver em nível lógico alto. Com base nas medidas,
-> em que modo o transistor está operando? Avalie se a aproximação de chave 
-> fechada é razoável nesta aplicação. Coloque essas respostas no relatório.
+> em que modo o transistor está operando? Avalie se é razoável aproximar o 
+> transistor por uma  chave fechada, como na Figura&#8239;2, nesta aplicação. 
+> Inclua essas considerações no relatório.
+
+> ## Atividade para entrega: Corrente de base
+>
+> Como calcular a corrente de base do trasistor? Utilizando as características
+> típicas de um transistor de silício (veja as equações do resumo do 
+> Capítulo&nbsp;3 do livro do Boylestad e Nashelsky), estime a corrente de 
+> base para o circuito da figura abaixo. Meça a corrente de base com um
+> amperímetro e compare.
+
+{%
+  include figure.html
+  file="motor-npn-5v.svg"
+  caption="Circuito para medição da corrente de base."
+%}
+
+
+
 
 [L293D]: https://www.ti.com/lit/ds/symlink/l293.pdf
 

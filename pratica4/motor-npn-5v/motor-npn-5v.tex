@@ -1,0 +1,64 @@
+\documentclass{standalone}
+
+\usepackage[portuguese]{babel}
+\usepackage{lmodern}
+
+\usepackage{siunitx}
+  \sisetup{output-decimal-marker={,}}
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+
+%% Plots, figures and Tikz
+\usepackage{tikz}
+  \tikzset{
+    every picture/.append style={scale=2}, 
+    every node/.style={transform shape}
+  }
+  \usetikzlibrary{arrows}
+    \tikzset{>=stealth}
+  \usetikzlibrary{calc}
+  \usetikzlibrary{intersections}
+  \usetikzlibrary{plotmarks}
+  \usetikzlibrary{positioning}
+\usepackage{pgfplots}
+  \usepgfplotslibrary{groupplots}
+  \usepgfplotslibrary{statistics}
+  \pgfplotsset{compat=newest}
+  \pgfplotsset{
+    log ticks with fixed point,
+    clip marker paths=true,
+  }
+\usepackage[siunitx]{circuitikz}
+  \ctikzset{american voltages}
+
+
+\begin{document}
+\begin{tikzpicture}
+  \draw (0,0) 
+    node[vcc] (vcc) {\SI{5}{V}}
+    to[Telmech=M, n=motor] ++(0, -1.5)
+    node[npn, anchor=C] (trans) {};
+
+  \node[color=DarkBlue, anchor=west] at (trans.east) {};
+  \node[color=DarkRed, anchor=north east, font=\scriptsize] at (trans.C) {c};
+  \node[color=DarkRed, anchor=south west, font=\scriptsize] at (trans.B) {b};
+  \node[color=DarkRed, anchor=south east, font=\scriptsize] at (trans.E) {e};
+  
+  \node[anchor=west] at (motor.west) {\color{DarkBlue}motor};
+
+  \draw (trans.C)
+    to[short, *-] ++(-1, 0)
+    to[diode] ++(0, 1.5)
+    |- (vcc.center)
+    node[circ] {};
+
+  \node[ground] at (trans.E) {};
+
+  \draw (trans.B)
+    to[R, l=\SI{220}{\ohm}] ++(-1.6, 0)
+    -- ++(0, 0.4)
+    node[vcc] {\SI5V};
+\end{tikzpicture}
+\end{document}
