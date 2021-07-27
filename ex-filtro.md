@@ -12,7 +12,7 @@ amplificador operacional é ideal, responda às questões abaixo.
 {%
    include figure.html
    file="filtro.svg"
-   caption="Filtro ativo passa-altas."
+   caption="Filtro ativo."
 %}
 
 
@@ -25,3 +25,6 @@ amplificador operacional é ideal, responda às questões abaixo.
    Os gráficos devem ser plotados com escala linear nos eixos das abscissas e
    ordenadas. Qualquer ambiente computacional pode ser utilizado para gerar
    os gráficos.
+3. Com base na resposta das questões anteriores, esse filtro é, 
+   qualitativamente, passa-altas ou passa-baixas? Qual é a frequência de corte
+   do filtro?
